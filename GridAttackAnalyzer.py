@@ -10,7 +10,7 @@ from tkinter import messagebox
 import datetime
 
 from tkinter.filedialog import askopenfile
-from graphviz import Source  #pip install graphviz # to install graphviz
+from graphviz import Source #pip install graphviz # to install graphviz
 from collections import OrderedDict
 from tkinter import StringVar
 import csv
@@ -18,7 +18,7 @@ import os
 import os.path
 from os import path
 from tkinter import simpledialog
-
+#os.environ["PATH"] += os.pathsep + 'D:/Program Files (x86)/Graphviz2.38/bin/'
 
 from datetime import datetime
 import random
@@ -121,12 +121,6 @@ class MyApplication(Frame):
                   ' ' +
                   str(num_devices)
                   )
-
-
-
-
-
-
 
 
 
@@ -909,15 +903,9 @@ class MyApplication(Frame):
         lbl_entry.grid(row = i, column=0, sticky="W", rowspan = len(distros_dict['object'][1]['devices_list']))
         lbl_entry.config(width=15)
     
-    
-
-
-
-    
-
 window = tk.Tk()
 window.title("GridAttackAnalysis")
-window.option_add( "*font", "Times 14" )
+window.option_add( "*font", "Times 10" )
 window.geometry()
 window.config(bg="#D6E2F3")
 app = MyApplication(window)

@@ -2,12 +2,13 @@
 This module constructs attack graph.
 """
 
-
 from Node import *
 from Network import *
 from Vulnerability import *
 from math import *
-  
+
+
+
 class gnode(node):
     """
     Create attack graph node object.

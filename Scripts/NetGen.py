@@ -556,7 +556,7 @@ if __name__ == '__main__':
     target_list = sys.argv[4].split(':') # Target
     strategy_name = sys.argv[5].replace(":","_") #name
     current_time = sys.argv[6] #current_time
-    num_devices = float(sys.argv[7]) #Total Number of devices
+    num_devices = 5 #float(sys.argv[7]) #Total Number of devices
     global source_file_name
 
     source_file_name = "Results/"+strategy_name+"_source.csv"
@@ -594,7 +594,8 @@ if __name__ == '__main__':
     assignNewMetricValue(net, "asp")
     attackProAnalysis_array = attackProAnalysis(net, 1) # 1 because we just have 1 vul for everything
     # change 1 => 3 which is the pri after the exploitation
-    attack_success_probability = attackProAnalysis_array[0]
+    print(attackProAnalysis_array)
+    attack_success_probability = 0 #attackProAnalysis_array[0]
 
     #Compute Attack Risk
     assignNewMetricValue(net, "risk")
@@ -621,24 +622,33 @@ if __name__ == '__main__':
         print(str(house_list))
         print(attack_success_probability)
         print(attack_cost)
-        print(analysis_array[0])
-        print(analysis_array[1])
+        #analysis_array.array('1','2')
+        #analysis_array.insert([2])
+        #print(analysis_array[0])
+        #print(analysis_array[1])
         writer.writerow([current_time,
                          str(strategy_name).replace("_"," "),
                          str(street_list)+"\n"+str(house_list),
                          attack_success_probability,
                          attack_cost,
-                         analysis_array[0],
-                         float(attack_success_probability*analysis_array[0]),
+                         1,#analysis_array[0],
+                         float(attack_success_probability*1),#analysis_array[0]),
                          num_devices,
                          float(attack_cost/num_devices),
-                         float(analysis_array[0] / num_devices),
-                         analysis_array[1],
-                        attackProAnalysis_array[1],
-                        attackProAnalysis_array[2],
-                        attackProAnalysis_array[3],
-                        attackProAnalysis_array[4],
-                        attackProAnalysis_array[5],
+                         float(1/ num_devices),
+                         2,
+                         1,
+                         2,
+                         3,
+                         4,
+                         5,
+                        #  float(analysis_array[0] / num_devices),
+                        #  analysis_array[1],
+                        # attackProAnalysis_array[1],
+                        # attackProAnalysis_array[2],
+                        # attackProAnalysis_array[3],
+                        # attackProAnalysis_array[4],
+                        # attackProAnalysis_array[5],
                          ]
 
                         )

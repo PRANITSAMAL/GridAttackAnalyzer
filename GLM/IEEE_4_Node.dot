@@ -1,0 +1,16 @@
+digraph {
+node [shape=box]
+node [shape=oval]
+node [shape=oval]
+node1 -> node2[style=bold color=red label="OH_line\n2000"]
+node [shape=box]
+node [shape=oval]
+node2 -> node3[style=bold color=red label="transformer\nNone"]
+node [shape=box]
+node3 -> node4[style=bold color=black label="OH_line\n2500"]
+node [shape=oval]
+node4 -> tn_A1[style=bold color=red label="transformer\nNone"]
+node [shape=box]
+node [shape=oval]
+tn_A1 -> tm_A1[style=solid color=green label="triplex_line\ntriplex_line\ntriplex_line\ntriplex_line\ntriplex_line\ntransformer\nNone"]
+}

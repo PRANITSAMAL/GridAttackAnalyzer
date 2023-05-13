@@ -1,1 +1,15 @@
 Time,Case Study Name,Streets and Houses Vector,Attack Success Probability,Attack Cost,Attack Impact,Attack Risk,Number of Devices,Average Attack Cost,Average Attack Impact,Number of Paths,Rare Paths,Unlilkely Paths ,Possible Paths,Likely Paths ,Almost Certain Paths
+49,17 15 23,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
+49,17 29 10,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
+65,12 12 18,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
+97,12 14 03,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
+101,12 14 52,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
+117,12 16 47,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
+97,12 34 26,"['A', 'B', 'C', 'D']
+['5', '6', '8', '12']",0,0,1,0.0,5,0.0,0.2,2,1,2,3,4,5
