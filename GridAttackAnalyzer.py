@@ -10,7 +10,7 @@ from tkinter import messagebox
 import datetime
 
 from tkinter.filedialog import askopenfile
-from graphviz import Source #pip install graphviz # to install graphviz
+from graphviz import Source #pip install graphviz # to install graphviz library
 from collections import OrderedDict
 from tkinter import StringVar
 import csv
